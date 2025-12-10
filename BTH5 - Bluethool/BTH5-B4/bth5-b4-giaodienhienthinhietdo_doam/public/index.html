@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DHT11 Bluetooth Monitor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>DHT11 Bluetooth Monitor</h1>
+  
+  <div class="controls">
+    <button id="connectBtn">Kết nối Bluetooth</button>
+    <button id="disconnectBtn" style="display: none;">Ngắt kết nối</button>
+  </div>
+  
+  <div id="status">Chưa kết nối</div>
+  
+  <div class="data" id="dataDisplay" style="display: none;">
+    <p>Nhiệt độ: <span id="temperature">--</span> °C</p>
+    <p>Độ ẩm: <span id="humidity">--</span> %</p>
+  </div>
+
+  <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
